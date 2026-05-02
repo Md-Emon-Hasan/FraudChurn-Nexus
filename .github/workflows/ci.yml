@@ -2,9 +2,9 @@ name: CI/CD Pipeline
 
 on:
   push:
-    branches: [main, develop]
+    branches: [master, develop]
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
   # ── Backend Tests ─────────────────────────────────────────────────────────
@@ -61,7 +61,7 @@ jobs:
     name: Docker Build Check
     runs-on: ubuntu-latest
     needs: [backend-tests, frontend-build]
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/master' || github.ref == 'refs/heads/develop'
 
     steps:
       - name: Checkout repository

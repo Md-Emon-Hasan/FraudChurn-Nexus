@@ -1,4 +1,4 @@
-# **FraudChurn Nexus: AI-Powered Unified ML Platform**
+# **FraudChurn Nexus: Unified Fraud and Churn Prediction**
 
 <p align="center">
   <a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"></a>
@@ -23,11 +23,11 @@ The system employs **Ensemble Voting Classifiers** and **Logistic Regression mod
 ---
 
 <p align="center">
-   <img width="476" height="452" alt="Image" src="https://github.com/user-attachments/assets/b9ab02aa-5fd9-4123-8d91-5b2855ba4383" />
+  <img width="100%" alt="Image" src="https://github.com/user-attachments/assets/7fda55aa-f0a4-4f95-aa9a-8d96b9e6f0c3" /><br/><br/>
 
-   <img width="438" height="468" alt="Image" src="https://github.com/user-attachments/assets/2a5202f4-487d-4400-a430-8b9d69c9eae8" />
+  <img width="100%" alt="Image" src="https://github.com/user-attachments/assets/b9ab02aa-5fd9-4123-8d91-5b2855ba4383" /><br/><br/>
 
-   <img width="737" height="614" alt="Image" src="https://github.com/user-attachments/assets/7fda55aa-f0a4-4f95-aa9a-8d96b9e6f0c3" />
+  <img width="100%" alt="Image" src="https://github.com/user-attachments/assets/2a5202f4-487d-4400-a430-8b9d69c9eae8" />
 </p>
 
 ---
@@ -203,8 +203,8 @@ The project includes a `run.py` script that **automatically** creates a local vi
 
 ```bash
 # Clone and enter the project
-git clone <repository-url>
-cd fraud-detection
+git clone https://github.com/Md-Emon-Hasan/FraudChurn-Nexus/tree/master
+cd FraudChurn-Nexus
 
 # Run the automated setup and launch script
 python run.py
