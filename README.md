@@ -23,7 +23,11 @@ The system employs **Ensemble Voting Classifiers** and **Logistic Regression mod
 ---
 
 <p align="center">
-  <img width="800" alt="Dashboard Overview" src="frontend/src/assets/hero.png" />
+   <img width="476" height="452" alt="Image" src="https://github.com/user-attachments/assets/b9ab02aa-5fd9-4123-8d91-5b2855ba4383" />
+
+   <img width="438" height="468" alt="Image" src="https://github.com/user-attachments/assets/2a5202f4-487d-4400-a430-8b9d69c9eae8" />
+
+   <img width="737" height="614" alt="Image" src="https://github.com/user-attachments/assets/7fda55aa-f0a4-4f95-aa9a-8d96b9e6f0c3" />
 </p>
 
 ---
