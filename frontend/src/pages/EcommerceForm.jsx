@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { getEcommerceDropdowns, predictEcommerce } from '../services/api';
 
 const EcommerceForm = () => {
@@ -29,7 +29,7 @@ const EcommerceForm = () => {
                     purchase_day_name: data.purchase_day_names[0]
                 }));
                 setLoading(false);
-            } catch (err) {
+            } catch (_err) {
                 setError('Failed to load form data. Please ensure the backend server is running.');
                 setLoading(false);
             }
@@ -57,7 +57,7 @@ const EcommerceForm = () => {
         try {
             const data = await predictEcommerce(formData);
             setResult(data);
-        } catch (err) {
+        } catch (_err) {
             setError('Prediction failed. Please check your inputs and try again.');
         } finally {
             setPredicting(false);

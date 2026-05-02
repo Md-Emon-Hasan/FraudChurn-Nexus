@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { getChurnDropdowns, predictChurn } from '../services/api';
 
 // Human-readable label mappings for binary (0/1) fields
@@ -55,7 +55,7 @@ const ChurnForm = () => {
                     PaperlessBilling: data.PaperlessBilling[0] ?? 0,
                 }));
                 setLoading(false);
-            } catch (err) {
+            } catch (_err) {
                 setError('Failed to load form data. Please ensure the backend server is running.');
                 setLoading(false);
             }
@@ -79,7 +79,7 @@ const ChurnForm = () => {
         try {
             const data = await predictChurn(formData);
             setResult(data);
-        } catch (err) {
+        } catch (_err) {
             setError('Prediction failed. Please check your inputs and try again.');
         } finally {
             setPredicting(false);
