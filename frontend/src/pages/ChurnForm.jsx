@@ -55,7 +55,8 @@ const ChurnForm = () => {
                     PaperlessBilling: data.PaperlessBilling[0] ?? 0,
                 }));
                 setLoading(false);
-            } catch (_err) {
+            } catch (err) {
+                console.error('Fetch dropdowns error:', err);
                 setError('Failed to load form data. Please ensure the backend server is running.');
                 setLoading(false);
             }
@@ -79,7 +80,8 @@ const ChurnForm = () => {
         try {
             const data = await predictChurn(formData);
             setResult(data);
-        } catch (_err) {
+        } catch (err) {
+            console.error('Prediction error:', err);
             setError('Prediction failed. Please check your inputs and try again.');
         } finally {
             setPredicting(false);

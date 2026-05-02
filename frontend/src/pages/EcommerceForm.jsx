@@ -29,7 +29,8 @@ const EcommerceForm = () => {
                     purchase_day_name: data.purchase_day_names[0]
                 }));
                 setLoading(false);
-            } catch (_err) {
+            } catch (err) {
+                console.error('Fetch dropdowns error:', err);
                 setError('Failed to load form data. Please ensure the backend server is running.');
                 setLoading(false);
             }
@@ -57,7 +58,8 @@ const EcommerceForm = () => {
         try {
             const data = await predictEcommerce(formData);
             setResult(data);
-        } catch (_err) {
+        } catch (err) {
+            console.error('Prediction error:', err);
             setError('Prediction failed. Please check your inputs and try again.');
         } finally {
             setPredicting(false);

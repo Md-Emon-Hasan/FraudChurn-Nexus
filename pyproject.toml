@@ -16,6 +16,7 @@ dependencies = [
     "scikit-learn==1.2.2",
     "pandas==2.0.3",
     "numpy==1.24.3",
+    "imbalanced-learn",
 ]
 
 [project.optional-dependencies]
