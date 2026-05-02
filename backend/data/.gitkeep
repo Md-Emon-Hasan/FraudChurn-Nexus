@@ -1,0 +1,2 @@
+# This directory stores the SQLite database (predictions.db).
+# It is excluded from version control to prevent data leakage and conflicts.

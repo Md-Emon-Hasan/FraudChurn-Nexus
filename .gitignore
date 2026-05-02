@@ -1,0 +1,68 @@
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+
+# ── Virtual Environments ──────────────────────────────────────────────────────
+.env
+.env.local
+.venv
+env/
+venv/
+ENV/
+
+# ── Test & Coverage ───────────────────────────────────────────────────────────
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+
+# ── Data & Database ───────────────────────────────────────────────────────────
+data/*.db
+data/*.sqlite
+data/*.json
+
+# ── ML Artifacts (tracked via Git LFS or excluded entirely) ──────────────────
+# *.pkl  <- uncomment this if you do NOT want to commit model files
+# *.model
+
+# ── Jupyter Notebooks ─────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── Frontend (Node.js) ────────────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.npm
+frontend/.eslintcache
+
+# ── IDE & OS ──────────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Misc ──────────────────────────────────────────────────────────────────────
+test.txt

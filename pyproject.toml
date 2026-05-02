@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unified-ml-platform"
+version = "1.0.0"
+description = "Production-grade unified ML platform for E-commerce Fraud Detection and Telecom Churn Prediction."
+authors = [{ name = "Developer" }]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "fastapi==0.104.1",
+    "uvicorn==0.24.0.post1",
+    "pydantic==2.5.2",
+    "scikit-learn==1.2.2",
+    "pandas==2.0.3",
+    "numpy==1.24.3",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest==7.4.3",
+    "pytest-cov==4.1.0",
+    "httpx==0.25.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["backend/tests"]
+addopts = "--cov=backend --cov-report=term-missing"
+
+[tool.coverage.run]
+source = ["backend"]
+omit = ["*/tests/*", "*/__init__.py"]
