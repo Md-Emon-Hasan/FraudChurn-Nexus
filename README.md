@@ -16,9 +16,9 @@
   <a href="https://www.docker.com/"><img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker"></a>
 </p>
 
-**FraudChurn Nexus** is a **production-ready, monolithic machine learning platform** that unifies two powerful predictive engines: **E-commerce Fraud Detection** and **Telecom Customer Churn Prediction**. Built with a **FastAPI backend** and a **React 19 frontend**, it achieves **90%+ accuracy** in fraud identification and **82%+ precision** in churn forecasting.
+Online stores discover fraudulent orders weeks later, when the chargeback arrives; telecom operators find out a customer was unhappy only after the cancellation goes through. Both problems are usually handled the same way — an analyst reading through transaction records and account histories one row at a time, deciding by gut feel. **FraudChurn Nexus replaces that manual screening.** Enter an order or a customer account and it returns a clear verdict along with **how confident it is**, so borderline cases are visible instead of hidden, and **every decision is written to a permanent record you can audit later**. Review teams stop hand-checking routine cases and spend their time only where the judgement call is genuinely close.
 
-The system employs **Ensemble Voting Classifiers** and **Logistic Regression models** optimized with **SMOTE** for handling imbalanced datasets. It features **SQLite-powered long-term prediction logging** and a **responsive glassmorphism UI**, ensuring a premium user experience and full traceability for every prediction.
+Under the hood it is a **production-ready monolith**: a **FastAPI** backend with **Pydantic**-validated schemas serving two independently trained **scikit-learn** engines — a **five-estimator hard-voting ensemble** (Gradient Boosting, AdaBoost, Random Forest, Decision Tree, Logistic Regression) for churn, trained on **SMOTE**-rebalanced data to correct severe class imbalance, and a one-hot-encoded **Logistic Regression** pipeline for fraud — both loaded from pickled artifacts at startup, with every request and result logged to **SQLite**. Form dropdowns are derived from the training data itself, so the UI cannot submit a category the model has never seen. A **React 19 + Vite + Tailwind/DaisyUI** glassmorphism frontend, rotating-file logging, a health-checked **Docker Compose** stack, one-command setup, and **CI-enforced 90% test coverage** complete it. It runs entirely on open-source components you host yourself — **no per-prediction vendor bill, no customer data leaving your infrastructure, and a full audit trail behind every decision**.
 
 ---
 
@@ -263,7 +263,8 @@ We strictly enforce code standards:
 ## **Developed By**
 
 **Md Emon Hasan**  
-**Email:** emon.mlengineer@gmail.com 
+**Email:** emon.mlengineer@gmail.com  
+**Portfolio:** [Md-Emon-Hasan](https://emonlabs-ai.hitechparks.com/)  
 **WhatsApp:** [+8801834363533](https://wa.me/8801834363533)  
 **GitHub:** [Md-Emon-Hasan](https://github.com/Md-Emon-Hasan)  
 **LinkedIn:** [Md Emon Hasan](https://www.linkedin.com/in/md-emon-hasan-695483237/)  
