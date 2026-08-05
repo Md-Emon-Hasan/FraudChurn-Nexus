@@ -74,7 +74,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile.backend
+          file: ./backend/Dockerfile
           push: false
           tags: unified-ml-platform/backend:latest
 

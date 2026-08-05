@@ -124,6 +124,7 @@ fraud-detection/
 │   │   └── test_services.py
 │   ├── config.py                 # App Configuration
 │   ├── database.py               # SQLite Connection Logic
+│   ├── Dockerfile                # Backend Containerization
 │   ├── logger.py                 # Custom Logger Setup
 │   ├── main.py                   # FastAPI Application Root
 │   ├── model_loader.py           # Artifact Loading Utilities
@@ -143,7 +144,6 @@ fraud-detection/
 │   ├── tailwind.config.js        # UI Styling Config
 │   └── vite.config.js            # Frontend Build Config
 ├── .gitignore                    # Git Ignore Rules
-├── Dockerfile.backend            # Backend Containerization
 ├── docker-compose.yml            # Multi-container Orchestration
 ├── pyproject.toml                # Project Metadata
 ├── requirements.txt              # Python Dependencies
